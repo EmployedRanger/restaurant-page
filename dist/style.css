@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 65%;
+}
+
+:root {
+    --light-font-color: whitesmoke;
+    --dark-font-color: #aaa;
+    --border-color: #222;
+
+    
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: url("/dist/images/pizza-background.jpg");
+    background-size: cover;
+    color: var(--light-font-color);
+}
+
+.active {
+    border-bottom: 5px solid var(--border-color);
+}
+
+.menu-item:hover {
+    opacity: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    color: var(--light-font-color)
+}
+
+.nav-button:hover {
+    transition: -10px;
+    cursor: pointer;
+}
+
+header {
+    opacity: .5;
+}
