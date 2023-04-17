@@ -69,8 +69,7 @@ function activePage(button) {
 
 function createContentArea() {
     const mainArea = document.createElement('div');
-    // mainArea.id('main')
-    mainArea.classList.add('main');
+    mainArea.classList.add('main-area');
     return mainArea;
 }
 

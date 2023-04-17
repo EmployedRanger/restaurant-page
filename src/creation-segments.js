@@ -1,6 +1,4 @@
-
-
-function createMenuItem(name, description) {
+export function createMenuItem(name, description) {
     const menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
 
@@ -21,4 +19,9 @@ function createMenuItem(name, description) {
     return menuItem;
 }
 
-export default createMenuItem;
+export function createParagraph(text) {
+    const paragraph = document.createElement('p');
+    paragraph.classList.add('paragraph');
+    paragraph.textContent = text;
+    return paragraph;
+}
