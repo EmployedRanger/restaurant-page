@@ -55,6 +55,7 @@ function createNavigation() {
 }
 
 function activePage(button) {
+    console.log('activePage ran')
     const buttons = document.querySelectorAll('.nav-button');
 
     buttons.forEach((button) => {
@@ -67,15 +68,15 @@ function activePage(button) {
 }
 
 function createContentArea() {
-    const mainArea = document.createElement('div')
-    mainArea.id('main');
+    const mainArea = document.createElement('div');
+    // mainArea.id('main')
     mainArea.classList.add('main');
     return mainArea;
 }
 
 function createFooter() {
-    const footer = document.createElement('footer')
-    footer.classList.add('footer')
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
 
     const copyrightThing = document.createElement('p')
     copyrightThing.textContent = `Copyright © ${new Date().getFullYear()} Employed Ranger`;
@@ -85,13 +86,13 @@ function createFooter() {
 }
 
 function startWebsite () {
-    const content = document.querySelector('#content')
-
+    const content = document.querySelector('#content');
     content.appendChild(createHeader());
     content.appendChild(createContentArea());
     content.appendChild(createFooter());
+    console.log('web after appends')
 
-    // activePage(document.querySelector('.nav-button'));
+    activePage(document.querySelector('.nav-button'));
     loadHome();
 }
 
