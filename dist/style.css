@@ -12,7 +12,7 @@ html {
 
 body {
     /* font-size: 1.6rem; */
-    background-image: url("/dist/images/pizzabackground.jpg");
+    background-image: url("../images/pizzabackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     object-position: 100% 0;
