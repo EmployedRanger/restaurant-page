@@ -98,6 +98,7 @@ footer {
     border: 1px solid var(--dark-font-color);
     margin-top: 4rem;
     scroll-behavior: auto;
+    margin-bottom: 40px;
 }
 
 /* home page */
@@ -166,11 +167,26 @@ footer {
 img {
     width: 100%;
     height: auto;
-    
+    vertical-align: bottom;
 }
 
 .food-des {
     text-align: center;
     height: 25%;
     width: 85%;
+}
+
+/* About Page */
+
+.about {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    border: 3px solid var(--light-font-color);
+    width: 90%;
 }

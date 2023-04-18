@@ -14,9 +14,12 @@ const loadAbout = function() {
     locationContainer.classList.add('location');
     locationPic.src = 'images/location.png';
     locationPic.alt = 'Location of island';
+    locationContainer.appendChild(locationPic);
 
     aboutDiv.appendChild(createParagraph('Join us over at Bouvet Island!'));
-    aboutDiv.appendChild()
+    aboutDiv.appendChild(locationContainer);
+    // aboutDiv.appendChild(createParagraph('Good luck making it over to us'));
+    aboutDiv.appendChild(createParagraph('Sorry, we don\'t take reservations'));
 }
 
 export default loadAbout;
