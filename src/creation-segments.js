@@ -3,17 +3,22 @@ export function createMenuItem(name, description) {
     menuItem.classList.add('menu-item');
 
     const foodName = document.createElement('h2');
-    foodName.textContent = description;
+    foodName.textContent = name;
 
-    const foodDescription = document.createElement('p')
+    const foodDescription = document.createElement('p');
+    foodDescription.classList.add('food-des');
     foodDescription.textContent = description;
 
-    const foodImg = document.createElement('img');
-    foodImg.src = `images/${name.toLowerCase()}.png`;
-    foodImg.alt = `${name}`;
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('img-container');
 
-    menuItem.appendChild(foodImg);
+    const foodImg = document.createElement('img');
+    foodImg.src = `images/${name.toLowerCase()}.jpg`;
+    foodImg.alt = `${name}`;
+    imgContainer.appendChild(foodImg);
+
     menuItem.appendChild(foodName);
+    menuItem.appendChild(imgContainer);
     menuItem.appendChild(foodDescription);
 
     return menuItem;
